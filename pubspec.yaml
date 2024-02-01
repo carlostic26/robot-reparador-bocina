@@ -19,7 +19,6 @@ dependencies:
   google_mobile_ads: ^1.2.0
   percent_indicator: ^4.2.0
   fluttertoast: ^8.0.8
-  percent_indicator: ^4.2.0
 
 dev_dependencies:
   flutter_test:

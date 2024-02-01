@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:robot_bocina/presentation/screens/home_screen.dart';
 import 'package:robot_bocina/presentation/screens/screens.dart';
 
 class LoadingScreen extends ConsumerWidget {
@@ -85,7 +86,7 @@ class LoadingScreen extends ConsumerWidget {
   }
 
   void isLoaded(BuildContext context) {
-/*     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (_) => const SelectPantalla())); */
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (_) => const HomeScreen()));
   }
 }
