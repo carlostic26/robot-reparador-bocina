@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:robot_bocina/presentation/screens/home_screen.dart';
-import 'package:robot_bocina/presentation/screens/screens.dart';
+import 'package:robotbocina/presentation/screens/screens.dart';
 
 class LoadingScreen extends ConsumerWidget {
   @override

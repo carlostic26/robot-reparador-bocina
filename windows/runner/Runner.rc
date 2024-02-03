@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "robot_bocina" "\0"
+            VALUE "FileDescription", "robotbocina" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "robot_bocina" "\0"
+            VALUE "InternalName", "robotbocina" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "robot_bocina.exe" "\0"
-            VALUE "ProductName", "robot_bocina" "\0"
+            VALUE "OriginalFilename", "robotbocina.exe" "\0"
+            VALUE "ProductName", "robotbocina" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,4 +1,4 @@
-package com.example.robot_bocina
+package com.example.robotbocina
 
 import io.flutter.embedding.android.FlutterActivity
 

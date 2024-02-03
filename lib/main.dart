@@ -1,43 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:robot_bocina/presentation/screens/screens.dart';
+import 'presentation/screens/screens.dart';
 
-/* 
-AppOpenAd? openAd;
-bool isAdLoaded = false;
-
-Future<void> loadAd() async {
-  Ads ads = Ads();
-
-  await AppOpenAd.load(
-    adUnitId: ads.openAd,
-    request: const AdRequest(),
-    adLoadCallback: AppOpenAdLoadCallback(
-      onAdLoaded: (ad) {
-        print("ad is loaded ok");
-        openAd = ad;
-        isAdLoaded =
-            true; // Actualiza isAdLoaded cuando el anuncio se ha cargado correctamente.
-        openAd!.show();
-      },
-      onAdFailedToLoad: (error) {
-        print("ad dailed to load $error");
-        isAdLoaded =
-            false; // Actualiza isAdLoaded cuando el anuncio falla al cargar.
-      },
-    ),
-    orientation: AppOpenAd.orientationPortrait,
-  );
-} */
-
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-/* 
-  MobileAds.instance.initialize();
-  await MobileAds.instance.initialize();
-  await loadAd();
-  cancelAds(); */
-
-  runApp(const ProviderScope(child: MyApp()));
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -47,10 +12,57 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Robot reparador',
-      theme: MyTheme.light,
-      home: LoadingScreen(),
+      title: 'Flutter Demo',
+      theme: MyTheme.dark,
+      home: HomeScreen(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
