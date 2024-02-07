@@ -6,3 +6,4 @@ export 'package:percent_indicator/linear_percent_indicator.dart';
 export 'package:robotbocina/presentation/theme/theme.dart';
 export 'package:robotbocina/presentation/screens/loading_screen.dart';
 export 'package:robotbocina/presentation/screens/home_screen.dart';
+export 'package:robotbocina/presentation/screens/sound_screen.dart';

@@ -53,15 +53,7 @@ class HomeScreen extends StatelessWidget {
                 const Column(
                   children: [
                     Text(
-                      'Limpia el agua residual',
-                      style: TextStyle(color: Colors.white, fontSize: 12),
-                    ),
-                    Text(
-                      'Saca el polvo interno del telefono',
-                      style: TextStyle(color: Colors.white, fontSize: 12),
-                    ),
-                    Text(
-                      'Extrae toda la humedad interna',
+                      'Limpia el agua residual interna\nSaca el polvo interno del telefono\nExtraer toda la humedad\nLimpia el microfono',
                       style: TextStyle(color: Colors.white, fontSize: 12),
                     ),
                   ],
@@ -88,37 +80,82 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      //TODO: Implementar funcionalidad para 5min
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => SoundScreen(
+                                    time: 1,
+                                  )));
                     },
                     child: const Text('1min'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      //TODO: Implementar funcionalidad para 10min
+                      onPressed:
+                      () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => SoundScreen(
+                                      time: 3,
+                                    )));
+                      };
                     },
                     child: const Text('3min'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      //TODO: Implementar funcionalidad para 15min
+                      onPressed:
+                      () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => SoundScreen(
+                                      time: 5,
+                                    )));
+                      };
                     },
                     child: const Text('5min'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      //TODO: Implementar funcionalidad para 20min
+                      onPressed:
+                      () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => SoundScreen(
+                                      time: 10,
+                                    )));
+                      };
                     },
                     child: const Text('10min'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      //TODO: Implementar funcionalidad para 25min
+                      onPressed:
+                      () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => SoundScreen(
+                                      time: 15,
+                                    )));
+                      };
                     },
                     child: const Text('15min'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      //TODO: Implementar funcionalidad para 30min
+                      onPressed:
+                      () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => SoundScreen(
+                                      time: 20,
+                                    )));
+                      };
                     },
                     child: const Text('20min'),
                   ),
